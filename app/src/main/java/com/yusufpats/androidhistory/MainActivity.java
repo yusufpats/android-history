@@ -1,17 +1,22 @@
 package com.yusufpats.androidhistory;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+
 public class MainActivity extends AppCompatActivity {
+
+    // STEP-1: View objects
+    private RecyclerView historyRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TODO: STEP-1: Bind the recycler view element object to java code
+        // STEP-1: Bind the recycler view element to java object
+        historyRecyclerView = findViewById(R.id.history_recycler_view);
 
         // TODO: STEP-2: Create a LayoutManager and attach it to the recycler view object
 
