@@ -8,6 +8,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 
 /**
  * Adapter class to display the list of android versions
@@ -16,6 +18,12 @@ import androidx.recyclerview.widget.RecyclerView;
  * 2: Create a ViewHolder using it
  */
 public class AndroidHistoryAdapter extends RecyclerView.Adapter<AndroidHistoryAdapter.AndroidHistoryViewHolder> {
+
+    private ArrayList<AndroidVersion> androidVersions;
+
+    public AndroidHistoryAdapter(ArrayList<AndroidVersion> androidVersions) {
+        this.androidVersions = androidVersions;
+    }
 
     @NonNull
     @Override
@@ -33,13 +41,18 @@ public class AndroidHistoryAdapter extends RecyclerView.Adapter<AndroidHistoryAd
 
     @Override
     public void onBindViewHolder(@NonNull AndroidHistoryViewHolder holder, int position) {
-        // TODO: Bind the data from the arrayList at the `position` to respective ViewHolder
+        // Bind the data from the arrayList at the `position` to respective ViewHolder
+
+        AndroidVersion androidVersion = androidVersions.get(position);
+
+        holder.androidVersionNameTextView.setText("Android " + androidVersion.androidVersionName);
+        holder.androidApiTextView.setText("API Level " + androidVersion.androidApiLevel);
     }
 
     @Override
     public int getItemCount() {
-        //TODO: Return the count of the array list
-        return 0;
+        //Return the count of the array list
+        return androidVersions.size();
     }
 
     /**
