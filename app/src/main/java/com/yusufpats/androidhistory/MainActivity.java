@@ -25,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         historyRecyclerView.setLayoutManager(layoutManager);
 
-        // TODO: STEP-3: Create data list
+        // STEP-3: Create data list
         ArrayList<AndroidVersion> androidVersions = getAndroidVersions();
 
-        // TODO: STEP-4: Create an object of the RecyclerView.Adapter class and attach it to the recycler view
-
+        // STEP-4: Create an object of the RecyclerView.Adapter class and attach it to the recycler view
+        AndroidHistoryAdapter adapter = new AndroidHistoryAdapter(androidVersions);
+        historyRecyclerView.setAdapter(adapter);
     }
 
     private ArrayList<AndroidVersion> getAndroidVersions() {
