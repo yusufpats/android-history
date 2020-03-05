@@ -35,23 +35,23 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<AndroidVersion> getAndroidVersions() {
         ArrayList<AndroidVersion> androidVersions = new ArrayList<>();
-        androidVersions.add(new AndroidVersion("Alpha", 1));
-        androidVersions.add(new AndroidVersion("Beta", 2));
+        androidVersions.add(new AndroidVersion("(no codename)", 1));
+        androidVersions.add(new AndroidVersion("(no codename)", 2));
         androidVersions.add(new AndroidVersion("Cupcake", 3));
         androidVersions.add(new AndroidVersion("Donut", 4));
-        androidVersions.add(new AndroidVersion("Eclair", 4));
-        androidVersions.add(new AndroidVersion("Froyo", 4));
-        androidVersions.add(new AndroidVersion("Gingerbread", 4));
-        androidVersions.add(new AndroidVersion("Honeycomb", 4));
-        androidVersions.add(new AndroidVersion("Ice-cream Sandwich", 4));
-        androidVersions.add(new AndroidVersion("Jelly Bean", 4));
-        androidVersions.add(new AndroidVersion("Kitkat", 4));
+        androidVersions.add(new AndroidVersion("Eclair", 5));
+        androidVersions.add(new AndroidVersion("Froyo", 8));
+        androidVersions.add(new AndroidVersion("Gingerbread", 9));
+        androidVersions.add(new AndroidVersion("Honeycomb", 11));
+        androidVersions.add(new AndroidVersion("Ice-cream Sandwich", 14));
+        androidVersions.add(new AndroidVersion("Jelly Bean", 16));
+        androidVersions.add(new AndroidVersion("Kitkat", 19));
         androidVersions.add(new AndroidVersion("Lollipop", 21));
-        androidVersions.add(new AndroidVersion("Marshmallow", 26));
-        androidVersions.add(new AndroidVersion("Nougat", 27));
-        androidVersions.add(new AndroidVersion("Oreo", 28));
-        androidVersions.add(new AndroidVersion("Pie", 29));
-        androidVersions.add(new AndroidVersion("Q", 4));
+        androidVersions.add(new AndroidVersion("Marshmallow", 23));
+        androidVersions.add(new AndroidVersion("Nougat", 24));
+        androidVersions.add(new AndroidVersion("Oreo", 26));
+        androidVersions.add(new AndroidVersion("Pie", 28));
+        androidVersions.add(new AndroidVersion("Android 10", 29));
 
         return androidVersions;
     }
