@@ -45,7 +45,7 @@ public class AndroidHistoryAdapter extends RecyclerView.Adapter<AndroidHistoryAd
 
         AndroidVersion androidVersion = androidVersions.get(position);
 
-        holder.androidVersionNameTextView.setText("Android " + androidVersion.androidVersionName);
+        holder.androidVersionNameTextView.setText(androidVersion.androidVersionName);
         holder.androidApiTextView.setText("API Level " + androidVersion.androidApiLevel);
     }
 
